@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 4px;
+    transition: transform 0.5s;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
