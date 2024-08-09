@@ -222,11 +222,11 @@ function App() {
   <div className="relative flex flex-col items-center justify-center lg:flex-row lg:justify-between bg-white md:pl-24 ">
 
   <div className="absolute block xs:hidden top-0 left-0 w-full h-full z-0">
-    <img src={CircleTransparent} className='w-[700px] h-[700px] object-cover hidden md:block' alt="Circle Transparent" />
+    <img src={CircleTransparent} className='w-[700px] h-[700px] object-cover hidden md:block' alt="Circle Transparent" loading="lazy" />
   </div>
 
   <div className="lg:order-2 lg:px-0 lg:pt-8 h-auto md:h-screen relative z-10">
-    <img src={IvanBanner} alt="Iván Agame" className="w-auto h-full lg:w-auto lg:h-full relative z-10" />
+    <img src={IvanBanner} alt="Iván Agame" className="w-auto h-full lg:w-auto lg:h-full relative z-10" loading="lazy" />
   </div>
 
   <div className="text-center lg:text-left px-8 lg:order-1 relative z-20">
@@ -546,13 +546,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">Dashboard Itver</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${mainImage === Dashboard1 ? 'border-4 border-amber-300 shadow-xl' : ''}`} >
-              <img src={Dashboard1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard1)} />
+              <img src={Dashboard1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${mainImage === Dashboard2 ? 'border-4 border-amber-300 shadow-xl' : ''}`} >
-              <img src={Dashboard2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard2)} />
+              <img src={Dashboard2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${mainImage === Dashboard3 ? 'border-4 border-amber-300 shadow-xl' : ''}`} >
-              <img src={Dashboard3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard3)} />
+              <img src={Dashboard3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setMainImage(Dashboard3)} loading="lazy" />
             </div>
           </div>
         </div>
@@ -566,13 +566,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">Itver Landing</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${imgItverLanding === itverLanding1 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={itverLanding1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding1)} />
+              <img src={itverLanding1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgItverLanding === itverLanding2 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={itverLanding2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding2)} />
+              <img src={itverLanding2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgItverLanding === itverLanding3 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={itverLanding3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding3)} />
+              <img src={itverLanding3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgItverLanding(itverLanding3)} loading="lazy" />
             </div>
           </div>
         </div>
@@ -586,13 +586,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">CartoData</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${imgCartoData === cartoData1 ? 'border-4 border-purple-400 shadow-xl' : ''}`} >
-              <img src={cartoData1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData1)} />
+              <img src={cartoData1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCartoData === cartoData2 ? 'border-4 border-purple-400 shadow-xl' : ''}`} >
-              <img src={cartoData2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData2)} />
+              <img src={cartoData2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCartoData === cartoData3 ? 'border-4 border-purple-400 shadow-xl' : ''}`} >
-              <img src={cartoData3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData3)} />
+              <img src={cartoData3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData3)} loading="lazy" />
             </div>
           </div>
         </div>
@@ -606,13 +606,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">Dashboard Itver</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${imgComex === comex1 ? 'border-4 border-blue-500 shadow-xl' : ''}`} >
-              <img src={comex1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgComex(comex1)} />
+              <img src={comex1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgComex(comex1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgComex === comex2 ? 'border-4 border-blue-500 shadow-xl' : ''}`} >
-              <img src={comex2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgComex(comex2)} />
+              <img src={comex2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgComex(comex2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgComex === comex2 ? 'border-4 border-blue-500 shadow-xl' : ''}`} >
-              <img src={comex2} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgComex(comex2)} />
+              <img src={comex2} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgComex(comex2)} loading="lazy" />
             </div>
           </div>
         </div>
@@ -628,13 +628,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">Itver Landing</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${imgCarnesRojas === carnesRojas1 ? 'border-4 border-rose-500 shadow-xl' : ''}`} >
-              <img src={carnesRojas1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas1)} />
+              <img src={carnesRojas1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCarnesRojas === carnesRojas2 ? 'border-4 border-rose-500 shadow-xl' : ''}`} >
-              <img src={carnesRojas2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas2)} />
+              <img src={carnesRojas2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCarnesRojas === carnesRojas3 ? 'border-4 border-rose-500 shadow-xl' : ''}`} >
-              <img src={carnesRojas3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas3)} />
+              <img src={carnesRojas3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCarnesRojas(carnesRojas3)} loading="lazy" />
             </div>
           </div>
         </div>
@@ -650,13 +650,13 @@ function App() {
           <h2 className="text-xl font-bold mb-4">CartoData</h2>
           <div className="grid grid-cols-3 gap-2">
             <div className={`cursor-pointer ${imgCartoData === cartoData1 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={cartoData1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData1)} />
+              <img src={cartoData1} alt="Small 1" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData1)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCartoData === cartoData2 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={cartoData2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData2)} />
+              <img src={cartoData2} alt="Small 2" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData2)} loading="lazy" />
             </div>
             <div className={`cursor-pointer ${imgCartoData === cartoData3 ? 'border-4 border-teal-500 shadow-xl' : ''}`} >
-              <img src={cartoData3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData3)} />
+              <img src={cartoData3} alt="Small 3" className="w-full h-full object-cover" onClick={() => setimgCartoData(cartoData3)} loading="lazy" />
             </div>
           </div>
         </div>
