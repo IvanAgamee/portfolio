@@ -88,6 +88,16 @@ function App() {
     );
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const icons = [
     { name: 'React', icon: <FaReact />, category: 'frontend' },
     { name: 'Vue', icon: <FaVuejs />, category: 'frontend' }, 
@@ -121,43 +131,86 @@ function App() {
 
   return (
     <>
-    <div className="relative">
+    <div className="relative" id="home">
 
-    <header className="bg-white mx-14">
-  <div className="container mx-auto flex justify-between items-center shadow-sm border-b-2 border-gray-300 py-4 px-6">
-    <div className="text-lg font-bold text-blue-900">Portfolio</div>
-    
-    {/* Botón de menú para pantallas pequeñas */}
-    <div className="lg:hidden">
-      <button className="text-blue-900 hover:text-blue-700 transition-colors font-bold duration-300">
-        Menu
-      </button>
-    </div>
+    <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14  border-b-2 border-gray-300 py-4 px-6 z-50" >
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-lg font-bold text-blue-900">Portfolio</div>
 
-    {/* Navegación para pantallas grandes */}
-    <nav className="hidden lg:flex space-x-8 items-center">
-      <a href="#experience" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Exp. Laboral</a>
-      <a href="#proyects" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Proyectos</a>
-      <div className="flex space-x-4">
-        <a href="#tecno" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Tecnologías</a>
-        <a href="#galery" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Galeria</a>
-        <a href="#contact" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Contacto</a>
+        {/* Botón de menú para pantallas pequeñas */}
+        <div className="lg:hidden">
+          <button 
+            onClick={toggleMenu}
+            className="text-blue-900 hover:text-blue-700 transition-colors font-bold duration-300"
+          >
+            Menu
+          </button>
+        </div>
+
+        {/* Navegación para pantallas grandes */}
+        <nav className="hidden lg:flex space-x-8 items-center">
+          <div className="flex space-x-4">
+            <a href="#experience" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Exp. Laboral</a>
+            <a href="#proyects" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Proyectos</a>
+            <a href="#tecno" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Tecnologías</a>
+            <a href="#galery" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Galería</a>
+            <a href="#contact" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Contacto</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
 
-  {/* Menú desplegable para pantallas pequeñas (opcional) */}
-  {/* <div className="lg:hidden bg-white shadow-lg mt-2 py-2">
-    <a href="#contact" className="block px-4 py-2 text-blue-900 hover:text-blue-700 transition-colors duration-300">Contact</a>
-    <a href="#resume" className="block px-4 py-2 text-blue-900 hover:text-blue-700 transition-colors duration-300">Resume</a>
-    <a href="#globe" className="block px-4 py-2 text-blue-900 hover:text-blue-700 transition-colors duration-300">Globe</a>
-    <a href="#mail" className="block px-4 py-2 text-blue-900 hover:text-blue-700 transition-colors duration-300">Mail</a>
-    <a href="#phone" className="block px-4 py-2 text-blue-900 hover:text-blue-700 transition-colors duration-300">Phone</a>
-  </div> */}
-</header>
+      {/* Menú desplegable para pantallas pequeñas */}
+      {isMenuOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg mt-2 py-2 z-50">
+          <a 
+            href="#home" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Home
+          </a>
+          <a 
+            href="#experience" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Exp. Laboral
+          </a>
+          <a 
+            href="#proyects" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Proyectos
+          </a>
+          <a 
+            href="#tecno" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Tecnologías
+          </a>
+          <a 
+            href="#galery" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Galería
+          </a>
+          <a 
+            href="#contact" 
+            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            onClick={closeMenu}
+          >
+            Contacto
+          </a>
+        </div>
+      )}
+    </header>
 
+    <div className='pt-12'>
 
-<section id="home">
+<section >
 
 
   <div className="block lg:hidden text-center mt-8">
@@ -166,7 +219,7 @@ function App() {
   </div>
 
 
-  <div className="relative flex flex-col items-center justify-center lg:flex-row lg:justify-between bg-white md:pl-24">
+  <div className="relative flex flex-col items-center justify-center lg:flex-row lg:justify-between bg-white md:pl-24 ">
 
   <div className="absolute block xs:hidden top-0 left-0 w-full h-full z-0">
     <img src={CircleTransparent} className='w-[700px] h-[700px] object-cover hidden md:block' alt="Circle Transparent" />
@@ -229,7 +282,7 @@ function App() {
         </div>
         <h4 className="text-gray-500 text-sm mb-2">Desarrollador</h4>
         <h2 className="text-xl font-semibold mb-4">Front-end</h2>
-        <p className="text-gray-600 mb-6 text-justify">
+        <p className="text-gray-600 mb-6 text-justify">pt-20
           Enfoque principal en <b>Java Script</b> con frameworks como <b>Vue y React</b>. Integrando en el desarrollo  librerias profesionales como Quasar y Material UI.
         </p>
       </div>
@@ -261,7 +314,7 @@ function App() {
     </div>
   </section>
 
-  <section className="p-4 my-6" id="tecno">
+  <section className="p-4 my-6 pt-20" id="tecno">
       {/* Filtros */}
 
       <div className="mb-4 flex flex-col md:flex-row justify-between mx-7">
@@ -340,7 +393,7 @@ function App() {
 
 
 
-    <section id="experience" className="dark:bg-white dark:text-gray-800 py-8">
+    <section id="experience" className="dark:bg-white dark:text-gray-800 pt-16 pb-11" >
       <div className="flex items-center space-x-2 overflow-x-auto overflow-y-hidden justify-center flex-nowrap dark:bg-white dark:text-gray-800">
         <a
           href="#"
@@ -474,7 +527,7 @@ function App() {
     </section>
 
 
-<section id="proyects" className="py-12 bg-gray-100">
+<section id="proyects" className="py-12 bg-gray-100 pt-20">
   <div className="container mx-auto px-6">
     <h2 className="text-2xl font-bold text-center text-cyan-800 mb-4">Proyectos en los que he colaborado: </h2>
     <div className="max-w-4xl mx-auto">
@@ -618,7 +671,7 @@ function App() {
 
 
 
-<section id="galery" className="relative w-5/6 mx-auto pb-12 pt-12">
+<section id="galery" className="relative w-5/6 mx-auto pb-12 pt-20">
       <div className="flex items-center mb-6">
         <span className="w-3 h-3 bg-cyan-800 rounded-full mr-2"></span>
         <h2 className="text-2xl font-bold text-cyan-800 mx-3">Galeria</h2>
@@ -662,7 +715,7 @@ function App() {
 
 
 
-<section id="contact" className="py-6 dark:bg-white dark:text-gray-900 px-6">
+<section id="contact" className="py-6 dark:bg-white dark:text-gray-900 px-6 pt-14">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div className="py-6 md:py-0 md:px-6">
       <div className="flex items-center mb-6">
@@ -757,6 +810,7 @@ function App() {
 
 
 
+  </div>
   </div>
     </>
   )
