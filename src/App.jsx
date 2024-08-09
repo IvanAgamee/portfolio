@@ -732,11 +732,11 @@ function App() {
 <footer className="dark:bg-gray-100 dark:text-gray-900 px-12">
 	<div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-600">
 		<ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-      <a href="#home">Inicio</a>
-			<a href="#experience">Exp. Laboral</a>
-			<a href="#proyects">Proyectos</a>
-			<a href="#tecno">Tecnologías</a>
-			<a href="#galery">Galeria</a>
+      <a href="#home" className='mx-1' >Inicio</a>
+			<a href="#experience" className='mx-1'>Exp. Laboral</a>
+			<a href="#proyects" className='mx-1'>Proyectos</a>
+			<a href="#tecno" className='mx-1'>Tecnologías</a>
+			<a href="#galery" className='mx-1'>Galeria</a>
 		</ul>
 		<div className="flex flex-col justify-center pt-6 lg:pt-0">
 			<div className="flex justify-center space-x-4">
