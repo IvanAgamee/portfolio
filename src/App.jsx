@@ -260,7 +260,7 @@ function App() {
       >
         <DownloadIcon className="w-5 h-5 mr-2" /> 
         <span className="hidden lg:inline">Descarga mi CV</span>
-        <span className="lg:hidden">Mi CV</span>
+        <span className="lg:hidden">CV</span>
       </a>
     </div>
   </div>
