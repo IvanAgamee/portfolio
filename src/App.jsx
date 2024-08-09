@@ -796,10 +796,12 @@ function App() {
 				<a rel="noopener noreferrer" href="#" title="Twitter" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50">
           <FaWhatsapp />
 				</a>
-				<a rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50">
+				<a rel="noopener noreferrer" href="https://www.linkedin.com/in/ivanagamee/" target="_blank" title="Facebook" 
+          className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50">
           <FaLinkedin />
 				</a> 
-				<a rel="noopener noreferrer" href="#" title="Gmail" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50">
+				<a rel="noopener noreferrer"  href="https://github.com/IvanAgamee" target="_blank"
+           title="Gmail" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50">
           <FaGithub />
 				</a>
 
