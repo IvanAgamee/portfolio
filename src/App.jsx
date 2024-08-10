@@ -1,6 +1,6 @@
 import { MailIcon, DownloadIcon } from '@heroicons/react/outline';
 import { useState } from 'react'
-import IvanBanner from './assets/IvanBanner.jpg';
+import IvanBanner from './assets/IvanBanner.svg';
 import CollageIvan from './assets/collageIvan.jpg';
 import CircleTransparent from './assets/circleTransparent.svg';
 import { FaReact, FaVuejs, FaLaravel, FaNodeJs, FaCss3Alt, FaHtml5, FaGitAlt, FaJira, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
