@@ -1,7 +1,7 @@
 import { MailIcon, DownloadIcon } from '@heroicons/react/outline';
 import { useState } from 'react'
-import IvanBanner from './assets/IvanBanner.svg';
-import CollageIvan from './assets/collageIvan.svg';
+import IvanBanner from './assets/IvanBanner.jpg';
+import CollageIvan from './assets/collageIvan.jpg';
 import CircleTransparent from './assets/circleTransparent.svg';
 import { FaReact, FaVuejs, FaLaravel, FaNodeJs, FaCss3Alt, FaHtml5, FaGitAlt, FaJira, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { FaFigma, FaGithub } from "react-icons/fa6";
@@ -22,26 +22,25 @@ import Carrusel_5 from './assets/carrusel_5.jpg';
 import Carrusel_6 from './assets/carrusel_6.jpg';
 import Carrusel_7 from './assets/carrusel_7.jpeg';
 
-import Dashboard1 from './assets/interfaceDashboard1.svg';
-import Dashboard2 from './assets/interfaceDashboard2.svg';
-import Dashboard3 from './assets/interfaceDashboard3.svg';
+import Dashboard1 from './assets/interfaceDashboard1.jpg';
+import Dashboard2 from './assets/interfaceDashboard2.jpg';
+import Dashboard3 from './assets/interfaceDashboard3.jpg';
+
+import itverLanding1 from './assets/itverLanding1.jpg';
+import itverLanding2 from './assets/itverLanding2.jpg';
+import itverLanding3 from './assets/itverLanding3.jpg';
+
+import cartoData1 from './assets/cartoData1.jpg';
+import cartoData2 from './assets/cartoData2.jpg';
+import cartoData3 from './assets/cartoData3.jpg';
+
+import carnesRojas1 from './assets/carnesRojas1.jpg';
+import carnesRojas2 from './assets/carnesRojas2.jpg';
+import carnesRojas3 from './assets/carnesRojas3.jpg';
 
 
-import itverLanding1 from './assets/itverLanding1.svg';
-import itverLanding2 from './assets/itverLanding2.svg';
-import itverLanding3 from './assets/itverLanding3.svg';
-
-import cartoData1 from './assets/cartoData1.svg';
-import cartoData2 from './assets/cartoData2.svg';
-import cartoData3 from './assets/cartoData3.svg';
-
-import carnesRojas1 from './assets/carnesRojas1.svg';
-import carnesRojas2 from './assets/carnesRojas2.svg';
-import carnesRojas3 from './assets/carnesRojas3.svg';
-
-
-import comex1 from './assets/comex1.svg';
-import comex2 from './assets/comex2.svg';
+import comex1 from './assets/comex1.jpg';
+import comex2 from './assets/comex2.jpg';
 
 
 function App() {
@@ -150,6 +149,7 @@ function App() {
         {/* Navegación para pantallas grandes */}
         <nav className="hidden lg:flex space-x-8 items-center">
           <div className="flex space-x-4">
+            <a href="#home" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Home</a>
             <a href="#experience" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Exp. Laboral</a>
             <a href="#proyects" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Proyectos</a>
             <a href="#tecno" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Tecnologías</a>
