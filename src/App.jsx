@@ -125,14 +125,26 @@ function App() {
 
   const filteredIcons = filter === 'all' ? icons : icons.filter(icon => icon.category === filter);
 
+  const [loading, setLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setLoading(false);
+  };
+
 
   
 
   return (
     <>
+        {loading && (
+              <div className="absolute inset-0 flex items-center justify-center z-50 backdrop-blur-sm bg-gray-800 bg-opacity-50">
+                <div className="border-t-4 border-blue-900 border-solid rounded-full w-16 h-16 animate-spin"></div>
+              </div>
+            )}
+            
     <div className="relative" id="home">
 
-    <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14 mt-1 border-b-2 border-gray-300 py-4 px-6 z-50" >
+    <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14 mt-1 border-b-2 border-gray-300 py-4 px-6 z-40" >
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-bold text-blue-900">Portfolio</div>
 
@@ -226,8 +238,14 @@ function App() {
   </div>
 
   <div className="lg:order-2 lg:px-0 lg:pt-8 h-auto md:h-screen relative z-10">
-    <img src={IvanBanner} alt="Iván Agame" className="w-auto h-full lg:w-auto lg:h-full relative z-10" loading="lazy" />
-  </div>
+              <img
+                src={IvanBanner}
+                alt="Iván Agame"
+                className="w-auto h-full lg:w-auto lg:h-full relative z-10"
+                loading="lazy"
+                onLoad={handleImageLoad}
+              />
+            </div>
 
   <div className="text-center lg:text-left px-8 lg:order-1 relative z-20">
     <p className="hidden lg:block text-cyan-600 text-3xl">¡Hola mundo! Mi nombre es:</p>
