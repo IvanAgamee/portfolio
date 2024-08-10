@@ -132,7 +132,7 @@ function App() {
     <>
     <div className="relative" id="home">
 
-    <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14  border-b-2 border-gray-300 py-4 px-6 z-50" >
+    <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14 mt-1 border-b-2 border-gray-300 py-4 px-6 z-50" >
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-bold text-blue-900">Portfolio</div>
 
