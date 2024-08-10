@@ -295,8 +295,7 @@ function App() {
                 </p>
                 <div className="mt-4 flex justify-between space-x-4 pb-12">
                   <a
-                    href="https://example.com/contact"
-                    target="_blank"
+                    href="#contact"
                     rel="noopener noreferrer"
                     className="flex items-center bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-teal-600"
                   >
