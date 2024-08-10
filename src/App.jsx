@@ -142,11 +142,11 @@ function App() {
               </div>
             )}
             
-    <div className="relative" id="home">
+    <div className="relative" id="home" >
 
     <header className="bg-white rounded-md shadow-md fixed top-0 left-0 right-0 mx-14 mt-1 border-b-2 border-gray-300 py-4 px-6 z-40" >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold text-blue-900">Portfolio</div>
+        <div className="text-lg font-bold text-blue-900">Portafolio</div>
 
         {/* Botón de menú para pantallas pequeñas */}
         <div className="lg:hidden">
@@ -176,42 +176,42 @@ function App() {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg mt-2 py-2 z-50">
           <a 
             href="#home" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Inicio
           </a>
           <a 
             href="#experience" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Exp. Laboral
           </a>
           <a 
             href="#proyects" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Proyectos
           </a>
           <a 
             href="#tecno" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Tecnologías
           </a>
           <a 
             href="#galery" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Galería
           </a>
           <a 
             href="#contact" 
-            className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
+            className="block px-4 py-2 text-slate-800 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
             Contacto
