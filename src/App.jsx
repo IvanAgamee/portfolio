@@ -149,7 +149,7 @@ function App() {
         {/* Navegación para pantallas grandes */}
         <nav className="hidden lg:flex space-x-8 items-center">
           <div className="flex space-x-4">
-            <a href="#home" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Home</a>
+            <a href="#home" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Inicio</a>
             <a href="#experience" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Exp. Laboral</a>
             <a href="#proyects" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Proyectos</a>
             <a href="#tecno" className="text-blue-900 hover:text-blue-700 transition-colors font-semibold duration-300">Tecnologías</a>
@@ -167,7 +167,7 @@ function App() {
             className="block px-4 py-2 text-blue-900 hover:text-white hover:bg-cyan-700 transition-colors duration-300" 
             onClick={closeMenu}
           >
-            Home
+            Inicio
           </a>
           <a 
             href="#experience" 
@@ -282,7 +282,7 @@ function App() {
         </div>
         <h4 className="text-gray-500 text-sm mb-2">Desarrollador</h4>
         <h2 className="text-xl font-semibold mb-4">Front-end</h2>
-        <p className="text-gray-600 mb-6 text-justify">pt-20
+        <p className="text-gray-600 mb-6 text-justify">
           Enfoque principal en <b>Java Script</b> con frameworks como <b>Vue y React</b>. Integrando en el desarrollo  librerias profesionales como Quasar y Material UI.
         </p>
       </div>
@@ -687,7 +687,7 @@ function App() {
               key={index}
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-1/3 flex-shrink-0 mx-2"
+              className="w-2/3 flex-shrink-0 mx-2"
             />
           ))}
         </div>
