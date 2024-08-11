@@ -1141,13 +1141,13 @@ function App() {
             </div>
           </section>
 
-          <section id="galery" className="relative w-5/6 mx-auto pb-12 pt-20">
+          <section id="galery" className="relative w-5/6 mx-auto pt-20">
             <div className="flex items-center mb-6">
               <span className="w-3 h-3 bg-cyan-800 rounded-full mr-2"></span>
               <h2 className="text-2xl font-bold text-cyan-800 mx-3">Galeria</h2>
             </div>
 
-            <div className="w-full lg:w-5/6 xl:w-5/6 mx-auto h-80 lg:h-96 xl:h-[500px]">
+            <div className="w-5/6 lg:w-5/6 xl:w-5/6 mx-auto ">
               <ImageGallery
                 items={imagesTest}
                 thumbnailPosition="left"
