@@ -23,7 +23,7 @@ import { FaFigma, FaGithub } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiPhp, SiSequelize, SiAdobexd, SiPostman } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import IconFront from "./assets/iconoFront.svg";
 import IconoBack from "./assets/IconoBack.svg";
@@ -178,6 +178,7 @@ function App() {
     { name: "React", icon: <FaReact />, category: "frontend" },
     { name: "Vue", icon: <FaVuejs />, category: "frontend" },
     { name: "JavaScript", icon: <RiJavascriptFill />, category: "frontend" },
+    { name: "TypeScript", icon: <BiLogoTypescript />, category: "frontend" },
 
     { name: "Php", icon: <SiPhp />, category: "backend" },
     { name: "Laravel", icon: <FaLaravel />, category: "backend" },
@@ -533,7 +534,7 @@ function App() {
                   <img
                     src={CollageIvan}
                     alt="Iván Agame"
-                    className="w-auto h-full md:w-auto md:h-full relative z-10"
+                    className="w-auto md:h-[500px] px-6 relative z-10" 
                   />
                 </div>
 
@@ -783,7 +784,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Dashboard Itver</h2>
+                    <h2 className="text-xl font-bold mb-4">Dashboard pag. de ISC</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -843,7 +844,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Itver Landing</h2>
+                    <h2 className="text-xl font-bold mb-4">Pagina de ISC</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -903,7 +904,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">CartoData</h2>
+                    <h2 className="text-xl font-bold mb-4">Gestor de tareas</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -963,7 +964,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Dashboard Itver</h2>
+                    <h2 className="text-xl font-bold mb-4">Sistema de compras</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -1025,7 +1026,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Itver Landing</h2>
+                    <h2 className="text-xl font-bold mb-4">Venta de ganado</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -1202,8 +1203,8 @@ function App() {
                     >
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                     </svg>
-                    <span>(52) 22-99-06-31-84</span>
-                  </p>
+                    <a href="https://wa.me/522299063184" target="_blank"> (52) 22-99-06-31-84</a>
+                  </p> 
                   <p className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1214,21 +1215,24 @@ function App() {
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
-                    <span>dejamivan@gmail.com</span>
+                    <a target="_blank" href="mailto:dejamivan@gmail.com">dejamivan@gmail.com</a>
                   </p>
 
                   <p className="flex items-center">
                     <div className="w-5 h-5 mr-2 sm:mr-6">
                       <FaLinkedin />
                     </div>
-                    <span>@ivanagamee</span>
+                    <a rel="noopener noreferrer" target="_blank"
+                    href="https://www.linkedin.com/in/ivanagamee/">@ivanagamee</a>
                   </p>
 
                   <p className="flex items-center">
                     <div className="w-5 h-5 mr-2 sm:mr-6">
                       <FaGithub />
                     </div>
-                    <span>IvanAgamee</span>
+                    <a 
+                    rel="noopener noreferrer" target="_blank"
+                    href="https://github.com/IvanAgamee">IvanAgamee</a>
                   </p>
                 </div>
               </div>
@@ -1309,9 +1313,10 @@ function App() {
                 <div className="flex justify-center space-x-4">
                   <a
                     rel="noopener noreferrer"
-                    href="#"
+                    href="https://wa.me/522299063184"
+                    target="_blank"
                     title="Twitter"
-                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50"
+                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50 hover:bg-teal-600"
                   >
                     <FaWhatsapp />
                   </a>
@@ -1320,7 +1325,7 @@ function App() {
                     href="https://www.linkedin.com/in/ivanagamee/"
                     target="_blank"
                     title="Facebook"
-                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50"
+                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50 hover:bg-teal-600"
                   >
                     <FaLinkedin />
                   </a>
@@ -1329,7 +1334,7 @@ function App() {
                     href="https://github.com/IvanAgamee"
                     target="_blank"
                     title="Gmail"
-                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50"
+                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50 hover:bg-teal-600"
                   >
                     <FaGithub />
                   </a>
