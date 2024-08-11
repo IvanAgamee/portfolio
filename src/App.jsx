@@ -407,9 +407,17 @@ function App() {
                     rel="noopener noreferrer"
                     className="flex items-center bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-teal-600"
                   >
-                    <DownloadIcon className="w-5 h-5 mr-2" />
-                    <span className="hidden lg:inline">Descarga mi CV</span>
-                    <span className="lg:hidden">CV</span>
+                    <DownloadIcon className="w-5 h-5 mr-2" /> 
+                    <a 
+                      href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
+                      target="_blank"
+                      className="hidden lg:inline">Descarga mi CV  
+                    </a>
+                    <a 
+                      href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
+                      target="_blank"
+                      className="lg:hidden">CV  
+                    </a>
                   </a>
                 </div>
               </div>
@@ -1300,7 +1308,7 @@ function App() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder=" ¡Hola! ¿Cómo estás? "
-                    className="block w-full p-2 px-3 rounded-md focus:ring dark:bg-gray-100"
+                    className="block w-full p-2 px-3 rounded-md dark:bg-gray-100"
                   ></textarea>
                 </label>
                 <button
