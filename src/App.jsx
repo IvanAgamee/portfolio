@@ -1,8 +1,12 @@
 import { MailIcon, DownloadIcon } from "@heroicons/react/outline";
-import { useState } from "react";
+import "react-image-gallery/styles/css/image-gallery.css";
+import { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
+import { useSendEmail } from './hooks/useSendEmail';
 import IvanBanner from "./assets/IvanBanner.svg";
 import CollageIvan from "./assets/collageIvan.png";
 import CircleTransparent from "./assets/circleTransparent.svg";
+import ImageGallery from "react-image-gallery";
 import {
   FaReact,
   FaVuejs,
@@ -80,6 +84,38 @@ function App() {
     Carrusel_7,
   ];
 
+  const imagesTest = [
+    {
+      original: Carrusel_1,
+      thumbnail: Carrusel_1,
+    },
+    {
+      original: Carrusel_2,
+      thumbnail: Carrusel_2,
+    },
+    {
+      original: Carrusel_3,
+      thumbnail: Carrusel_3,
+    },
+    {
+      original: Carrusel_4,
+      thumbnail: Carrusel_4,
+    },
+    {
+      original: Carrusel_5,
+      thumbnail: Carrusel_5,
+    },
+    {
+      original: Carrusel_6,
+      thumbnail: Carrusel_6,
+    },
+    {
+      original: Carrusel_7,
+      thumbnail: Carrusel_7,
+    },
+  ];
+  
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
 
@@ -103,6 +139,39 @@ function App() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const { sendEmail, error, success } = useSendEmail();
+
+  // re_81wDpqZu_Nee4g7covkCvn5FdTmYwe1bG
+
+  // Estado para todos los campos del formulario
+  const [formData, setFormData] = useState({
+    user_name: "",
+    message: "",
+    user_email: "",
+    reply_to: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSendEmail = async (e) => {
+    e.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+
+    await sendEmail(formData); // Envía los datos del formulario
+
+    setFormData({
+      user_name: "",
+      message: "",
+      user_email: "",
+      reply_to: "",
+    });
   };
 
   const icons = [
@@ -140,6 +209,11 @@ function App() {
 
   return (
     <>
+    <Toaster
+  position="top-center"
+  reverseOrder={true}
+/>
+
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center z-50 backdrop-blur-sm bg-gray-800 bg-opacity-50">
           <div className="border-t-4 border-blue-900 border-solid rounded-full w-16 h-16 animate-spin"></div>
@@ -1073,42 +1147,16 @@ function App() {
               <h2 className="text-2xl font-bold text-cyan-800 mx-3">Galeria</h2>
             </div>
 
-            <div className="overflow-hidden rounded-lg">
-              <div
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{
-                  transform: `translateX(-${
-                    currentIndex * (100 / itemsPerPage)
-                  }%)`,
-                }}
-              >
-                {images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    className="w-11/12 md:w-2/3 flex-shrink-0 mx-2"
-                  />
-                ))}
-              </div>
+            <div className="w-full lg:w-5/6 xl:w-5/6 mx-auto h-80 lg:h-96 xl:h-[500px]">
+              <ImageGallery
+                items={imagesTest}
+                thumbnailPosition="left"
+              />
             </div>
 
-            {/* Left Arrow */}
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
-            >
-              &#10094;
-            </button>
-
-            {/* Right Arrow */}
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
-            >
-              &#10095;
-            </button>
           </section>
+
+         
 
           <section
             id="contact"
@@ -1188,27 +1236,40 @@ function App() {
                   <span className="mb-2">Nombre completo</span>
                   <input
                     type="text"
-                    placeholder=" Ivan Agame"
-                    className="block w-full py-2 rounded-md shadow-sm dark:bg-gray-100"
+                    name="user_name"
+                    value={formData.user_name}
+                    onChange={handleChange}
+                    placeholder=" Iván Agame"
+                    className="block w-full p-2 px-3 rounded-md shadow-sm dark:bg-gray-100"
                   />
                 </label>
+
                 <label className="block">
                   <span className="mb-2">Correo electrónico</span>
                   <input
                     type="email"
                     placeholder=" example@example.com"
-                    className="block w-full py-2 rounded-md shadow-sm dark:bg-gray-100"
+                    name="user_email"
+                    value={formData.user_email}
+                    onChange={handleChange}
+                    className="block w-full p-2 px-3 rounded-md shadow-sm dark:bg-gray-100"
                   />
                 </label>
                 <label className="block">
                   <span className="mb-2">Mensaje</span>
                   <textarea
                     rows="3"
+                    type="text"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder=" ¡Hola! ¿Cómo estás? "
-                    className="block w-full py-2 rounded-md focus:ring dark:bg-gray-100"
+                    className="block w-full p-2 px-3 rounded-md focus:ring dark:bg-gray-100"
                   ></textarea>
                 </label>
                 <button
+                  onClick={handleSendEmail} 
+                  disabled={loading}
                   type="button"
                   className="self-center px-8 py-3 text-lg rounded dark:bg-cyan-600 dark:text-gray-50  hover:bg-teal-600"
                 >
