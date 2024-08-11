@@ -1147,10 +1147,17 @@ function App() {
               <h2 className="text-2xl font-bold text-cyan-800 mx-3">Galeria</h2>
             </div>
 
-            <div className="w-5/6 lg:w-5/6 xl:w-5/6 mx-auto ">
+            <div className="hidden lg:block w-5/6 lg:w-5/6 xl:w-5/6 mx-auto ">
               <ImageGallery
                 items={imagesTest}
                 thumbnailPosition="left"
+              />
+            </div>
+
+            <div className="lg:hidden w-5/6 lg:w-5/6 xl:w-5/6 mx-auto ">
+              <ImageGallery
+                items={imagesTest}
+                thumbnailPosition="bottom"
               />
             </div>
 
