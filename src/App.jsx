@@ -31,13 +31,16 @@ import IconFront from "./assets/iconoFront.svg";
 import IconoBack from "./assets/IconoBack.svg";
 import IconoDesign from "./assets/IconoDesign.svg";
 
-import Carrusel_1 from "./assets/carrusel_1.jpg";
+import Carrusel_1 from "./assets/carrusel_1.jpeg";
 import Carrusel_2 from "./assets/carrusel_2.jpg";
 import Carrusel_3 from "./assets/carrusel_3.jpg";
 import Carrusel_4 from "./assets/carrusel_4.jpeg";
 import Carrusel_5 from "./assets/carrusel_5.jpg";
 import Carrusel_6 from "./assets/carrusel_6.jpg";
-import Carrusel_7 from "./assets/carrusel_7.jpeg";
+import Carrusel_7 from "./assets/carrusel_7.jpeg"
+import Carrusel_13 from "./assets/carrusel_13.jpg";
+import Carrusel_12 from "./assets/carrusel_12.jpeg";
+import Carrusel_15 from "./assets/carrusel_12.jpeg";
 
 import Dashboard1 from "./assets/interfaceDashboard1.jpg";
 import Dashboard2 from "./assets/interfaceDashboard2.jpg";
@@ -84,12 +87,14 @@ function App() {
     Carrusel_5,
     Carrusel_6,
     Carrusel_7,
+    Carrusel_13,
+    Carrusel_12
   ];
 
   const imagesTest = [
     {
-      original: Carrusel_1,
-      thumbnail: Carrusel_1,
+      original: Carrusel_12,
+      thumbnail: Carrusel_12,
     },
     {
       original: Carrusel_2,
@@ -114,6 +119,14 @@ function App() {
     {
       original: Carrusel_7,
       thumbnail: Carrusel_7,
+    },
+    {
+      original: Carrusel_13,
+      thumbnail: Carrusel_13,
+    },
+    {
+      original: Carrusel_1,
+      thumbnail: Carrusel_1,
     },
   ];
   
@@ -576,7 +589,7 @@ function App() {
 
           <section
             id="experience"
-            className="dark:bg-white dark:text-gray-800 pt-16 pb-11"
+            className="dark:bg-white dark:text-gray-800 pt-20 pb-11"
           >
             <div className="flex items-center space-x-2 overflow-x-auto overflow-y-hidden justify-center flex-nowrap dark:bg-white dark:text-gray-800">
               <a
