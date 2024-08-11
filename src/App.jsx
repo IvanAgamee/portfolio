@@ -18,6 +18,7 @@ import {
   FaJira,
   FaLinkedin,
   FaWhatsapp,
+  FaInstagram
 } from "react-icons/fa";
 import { FaFigma, FaGithub } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
@@ -1313,13 +1314,22 @@ function App() {
                 <div className="flex justify-center space-x-4">
                   <a
                     rel="noopener noreferrer"
+                    href="https://www.instagram.com/ivan_agame/"
+                    target="_blank"
+                    title="Twitter"
+                    className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50 hover:bg-teal-600"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    rel="noopener noreferrer"
                     href="https://wa.me/522299063184"
                     target="_blank"
                     title="Twitter"
                     className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-cyan-600 dark:text-gray-50 hover:bg-teal-600"
                   >
                     <FaWhatsapp />
-                  </a>
+                  </a> 
                   <a
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/ivanagamee/"
