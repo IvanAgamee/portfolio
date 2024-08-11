@@ -18,7 +18,8 @@ import {
   FaJira,
   FaLinkedin,
   FaWhatsapp,
-  FaInstagram
+  FaInstagram,
+  FaExternalLinkAlt
 } from "react-icons/fa";
 import { FaFigma, FaGithub } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
@@ -785,7 +786,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Dashboard pag. de ISC</h2>
+                    <h2 className="text-xl font-bold mb-4">Dashboard de ISC</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -845,7 +846,17 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Pagina de ISC</h2>
+                    <div className="flex justify-between">
+                        <h2 className="text-xl font-bold mb-4">Pagina de ISC</h2>
+                        <a
+                        href="http://carreras3.veracruz.tecnm.mx:21213/sistemas/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center bg-cyan-600 text-white px-4 mb-4 rounded-md shadow-md hover:bg-teal-600"
+                      >
+                        <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Visitar
+                      </a>
+                    </div>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
