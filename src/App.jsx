@@ -60,6 +60,7 @@ import carnesRojas3 from "./assets/carnesRojas3.jpg";
 
 import comex1 from "./assets/comex1.jpg";
 import comex2 from "./assets/comex2.jpg";
+import comex3 from "./assets/comex3.jpg";
 
 function App() {
   const [mainImage, setMainImage] = useState(Dashboard1);
@@ -997,7 +998,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">Sistema de compras</h2>
+                    <h2 className="text-xl font-bold mb-4">Sistema de enrolamiento</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
@@ -1031,16 +1032,16 @@ function App() {
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgComex === comex2
+                          imgComex === comex3
                             ? "border-4 border-blue-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={comex2}
+                          src={comex3}
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgComex(comex2)}
+                          onClick={() => setimgComex(comex3)}
                           loading="lazy"
                         />
                       </div>
@@ -1121,7 +1122,7 @@ function App() {
                     />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-xl font-bold mb-4">CartoData</h2>
+                    <h2 className="text-xl font-bold mb-4">Sistema de compras</h2>
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
