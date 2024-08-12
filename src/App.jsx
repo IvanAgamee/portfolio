@@ -231,7 +231,7 @@ function App() {
 />
 
       {loading && (
-        <div className="absolute inset-0 flex items-center justify-center z-50 backdrop-blur-sm bg-gray-800 bg-opacity-50">
+        <div className="absolute inset-0 flex items-center justify-center z-50 backdrop-blur-xl bg-white">
           <div className="border-t-4 border-blue-900 border-solid rounded-full w-16 h-16 animate-spin"></div>
         </div>
       )}
@@ -402,7 +402,7 @@ function App() {
                     <MailIcon className="w-5 h-5 mr-2" /> LinkedIn
                   </a>
                   <a
-                    href="https://www.canva.com/design/DAGNPZSx1v8/rfvlXi2if9ZUPS7wSAM91Q/view?utm_content=DAGNPZSx1v8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                    href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-teal-600"
