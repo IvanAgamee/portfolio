@@ -570,26 +570,20 @@ function App() {
                     </h2>
                   </div>
                   <p className="text-lg text-gray-600 text-justify mb-4">
-                    Soy un apasionado Ingeniero de software con un enfoque
-                    sólido en el desarrollo frontend y experiencia en el
-                    backend. Con un profundo conocimiento de tecnologías como
-                    Vue.js y PHP (Laravel), me destaco en la creación de
-                    interfaces de usuario intuitivas y experiencias web
-                    dinámicas. Además, mi versatilidad se extiende al backend,
-                    donde puedo emplear mis habilidades en PHP para construir
-                    sistemas robustos y escalables. Además de mis fortalezas
-                    principales, también poseo habilidades en React y Node js
-                    (Sequelize) lo que me permite adaptarme rápidamente a nuevas
-                    tecnologías y entornos de desarrollo
+                  Soy un apasionado Ingeniero de software con un enfoque sólido en el desarrollo frontend y
+                  experiencia en el backend. Con un profundo conocimiento de tecnologías como Vue js y PHP
+                  (Laravel), me destaco en la creación de interfaces de usuario intuitivas y experiencias web
+                  dinámicas. Además, mi versatilidad se extiende al backend, donde puedo emplear mis
+                  habilidades en PHP para construir sistemas robustos y escalables. Además de mis fortalezas
+                  principales, también poseo habilidades en React y Express (Sequelize) lo que me permite
+                  adaptarme rápidamente a nuevas tecnologías y entornos de desarrollo
                     <br />
                     <br />
-                    Tengo una sólida experiencia trabajando en entornos
-                    colaborativos de equipo, donde he aplicado metodologías
-                    ágiles como Scrum, el uso de Git y GitHub para el control de
-                    versiones, además de portar un firme compromiso con la
-                    escritura de código limpio y mantenible, siguiendo patrones
-                    de arquitectura para garantizar proyectos escalables y
-                    fáciles de mantener a largo plazo.
+                  Tengo una sólida experiencia trabajando en entornos colaborativos de equipo, donde he
+                  aplicado metodologías ágiles como Scrum, el uso de Git para el control de versiones, además
+                  de portar un firme compromiso con la escritura de código limpio y mantenible, siguiendo
+                  patrones de arquitectura para garantizar proyectos escalables y fáciles de mantener a largo
+                  plazo.
                   </p>
                 </div>
               </div>
@@ -649,7 +643,7 @@ function App() {
                           Noviembre 2022 - Agosto 2024
                         </time>
                         <p className="mt-3 text-justify">
-                          Colaboré en diversos proyectos como desarrollador
+                          Colaboré en diversos proyectos como desarrollador web
                           fullstack, especializándome en tecnologías como PHP
                           con Laravel y Vue.js con librerias de componentes como
                           Quasar.
@@ -698,12 +692,11 @@ function App() {
                           Agosto 2018 - Julio 2022
                         </time>
                         <p className="mt-3 text-justify">
-                          Egresado de la carrera de Ingeniería en Sistemas
-                          Computacionales, desarrollando habilidiades de
+                          Egresado de la carrera de Ingeniería en Sistemas, desarrollando habilidiades de
                           programación y bases de datos
                         </p>
                         <p className="mt-2 text-justify">
-                          Además de participar en diversos eventos de
+                          Además de participar en diversos eventos Nacionales de
                           divulgación científica en temas como Inteligencia
                           Artificial
                         </p>
@@ -720,14 +713,15 @@ function App() {
                           {" "}
                           Agosto 2016 - Julio 2018
                         </time>
-                        <p className="mt-3">
+                        <p className="mt-3 text-justify">
                           Egresado como técnico en programación usando
-                          tecnologías como Java para aprender las bases para
-                          programar
+                          tecnologías como Java para aprender las bases de 
+                          la programación de escritorio y movil. Aprendí las bases
+                          de sistemas operativos como Linux
                         </p>
-                        <p className="mt-2">
-                          Además de desarrollar los fundamentos de bases de
-                          datos en MySQL
+                        <p className="mt-2 text-justify">
+                          Además de aprender los fundamentos de las bases de
+                          datos relacionales en MySQL
                         </p>
                       </div>
                     </div>
@@ -747,7 +741,7 @@ function App() {
                           Octubre 2019 - Julio 2022
                         </time>
                         <p className="mt-3 text-justify">
-                          Participe en diversos eventos de divulgación como
+                          Participe en diversos eventos de divulgación científica como
                           organizador.
                         </p>
                         <p className="mt-2 text-justify">
@@ -774,7 +768,7 @@ function App() {
                         </p>
                         <p className="mt-2 text-justify">
                           Los talleres eran de diseño grafico en herramientas
-                          como Canva y los cursos de programación con Figma, Css
+                          como Canva y cursos de programación con Css, Html
                           y JavaScript.
                         </p>
                       </div>
