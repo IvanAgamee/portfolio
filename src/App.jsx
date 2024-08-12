@@ -96,38 +96,47 @@ function App() {
     {
       original: Carrusel_12,
       thumbnail: Carrusel_12,
+      description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
     {
       original: Carrusel_2,
       thumbnail: Carrusel_2,
+      description: 'Presentación de la pagina oficial de la carrera a nivel Estatal'
     },
     {
       original: Carrusel_3,
       thumbnail: Carrusel_3,
+      description: 'Presentación de la pagina oficial de la carrera a nivel Estatal'
     },
     {
       original: Carrusel_4,
       thumbnail: Carrusel_4,
+      description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
     {
       original: Carrusel_5,
       thumbnail: Carrusel_5,
+      description: 'Presentación de la pagina oficial de la carrera a nivel Local'
     },
     {
       original: Carrusel_6,
       thumbnail: Carrusel_6,
+      description: 'Presentación de la pagina oficial de la carrera a nivel Local'
     },
     {
       original: Carrusel_7,
       thumbnail: Carrusel_7,
+      description: 'Presentación de proyectos a director nacional del TECNM'
     },
     {
       original: Carrusel_13,
       thumbnail: Carrusel_13,
+      description: 'Feria de carreras 2022'
     },
     {
       original: Carrusel_1,
       thumbnail: Carrusel_1,
+      description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
   ];
   
