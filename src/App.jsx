@@ -46,6 +46,10 @@ import Dashboard1 from "./assets/interfaceDashboard1.jpg";
 import Dashboard2 from "./assets/interfaceDashboard2.jpg";
 import Dashboard3 from "./assets/interfaceDashboard3.jpg";
 
+import Compras1 from "./assets/compras1.jpg";
+import Compras2 from "./assets/compras2.jpg";
+import Compras3 from "./assets/compras3.jpg";
+
 import itverLanding1 from "./assets/itverLanding1.jpg";
 import itverLanding2 from "./assets/itverLanding2.jpg";
 import itverLanding3 from "./assets/itverLanding3.jpg";
@@ -68,6 +72,8 @@ function App() {
   const [imgItverLanding, setimgItverLanding] = useState(itverLanding2);
 
   const [imgCartoData, setimgCartoData] = useState(cartoData3);
+
+  const [imgCompras, setimgCompras] = useState(Compras3);
 
   const [imgComex, setimgComex] = useState(comex1);
 
@@ -1119,7 +1125,7 @@ function App() {
                 <div className="max-w-lg mx-6 my-6 bg-white shadow-lg rounded-lg overflow-hidden">
                   <div className="relative w-full h-64">
                     <img
-                      src={imgCartoData}
+                      src={imgCompras}
                       alt="Main"
                       className="w-full h-full object-cover"
                     />
@@ -1129,52 +1135,53 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData1
+                          imgCompras === Compras1
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData1}
+                          src={Compras1}
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData1)}
+                          onClick={() => setimgCompras(Compras1)}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData2
+                          imgCompras === Compras2
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData2}
+                          src={Compras2}
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData2)}
+                          onClick={() => setimgCompras(Compras2)}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData3
+                          imgCompras === Compras3
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData3}
+                          src={Compras3}
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData3)}
+                          onClick={() => setimgCompras(Compras3)}
                           loading="lazy"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </section>
