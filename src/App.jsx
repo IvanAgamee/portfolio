@@ -40,7 +40,7 @@ import Carrusel_6 from "./assets/carrusel_6.jpg";
 import Carrusel_7 from "./assets/carrusel_7.jpeg"
 import Carrusel_13 from "./assets/carrusel_13.jpg";
 import Carrusel_12 from "./assets/carrusel_12.jpeg";
-import Carrusel_15 from "./assets/carrusel_12.jpeg";
+// import Carrusel_15 from "./assets/carrusel_12.jpeg";
 
 import Dashboard1 from "./assets/interfaceDashboard1.jpg";
 import Dashboard2 from "./assets/interfaceDashboard2.jpg";
@@ -248,7 +248,25 @@ function App() {
 
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center z-50 backdrop-blur-xl bg-white">
-          <div className="border-t-4 border-blue-900 border-solid rounded-full w-16 h-16 animate-spin"></div>
+          {/* <div className="border-t-4 border-blue-900 border-solid rounded-full w-16 h-16 animate-spin"></div> */}
+          <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster">
+            <div className="wheel"></div>
+            <div className="hamster">
+              <div className="hamster__body">
+                <div className="hamster__head">
+                  <div className="hamster__ear"></div>
+                  <div className="hamster__eye"></div>
+                  <div className="hamster__nose"></div>
+                </div>
+                <div className="hamster__limb hamster__limb--fr"></div>
+                <div className="hamster__limb hamster__limb--fl"></div>
+                <div className="hamster__limb hamster__limb--br"></div>
+                <div className="hamster__limb hamster__limb--bl"></div>
+                <div className="hamster__tail"></div>
+              </div>
+            </div>
+            <div className="spoke"></div>
+          </div>
         </div>
       )}
 
