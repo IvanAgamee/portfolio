@@ -433,7 +433,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="flex items-center bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-teal-600"
                   >
-                    <MailIcon className="w-5 h-5 mr-2" /> LinkedIn
+                    <FaLinkedin className="w-5 h-5 mr-2" /> LinkedIn
                   </a>
                   <a
                     href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
