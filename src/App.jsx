@@ -897,14 +897,6 @@ function App() {
                   <div className="p-4">
                     <div className="flex justify-between">
                         <h2 className="text-xl font-bold mb-4">Pagina de ISC</h2>
-                        /*  <a
-                        href="http://carreras3.veracruz.tecnm.mx:21213/sistemas/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center bg-cyan-600 text-white px-4 mb-4 rounded-md shadow-md hover:bg-teal-600"
-                      >
-                        <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Visitar
-                      </a> */
                     </div>
                     <div className="grid grid-cols-3 gap-2">
                       <div
