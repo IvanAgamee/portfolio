@@ -436,19 +436,19 @@ function App() {
                     <FaLinkedin className="w-5 h-5 mr-2" /> LinkedIn
                   </a>
                   <a
-                    href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1UIGicy36hQUDGa5CPbIxB-W5QFa7qdJZ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center bg-cyan-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-teal-600"
                   >
                     <DownloadIcon className="w-5 h-5 mr-2" /> 
                     <a 
-                      href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1UIGicy36hQUDGa5CPbIxB-W5QFa7qdJZ/view?usp=sharing"
                       target="_blank"
                       className="hidden lg:inline">Descarga mi CV  
                     </a>
                     <a 
-                      href="https://drive.google.com/file/d/1FP5AgB2Bij3B8lr28K_-h-cxMoTQBUQt/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1UIGicy36hQUDGa5CPbIxB-W5QFa7qdJZ/view?usp=sharing"
                       target="_blank"
                       className="lg:hidden">CV  
                     </a>
@@ -603,20 +603,11 @@ function App() {
                     </h2>
                   </div>
                   <p className="text-lg text-gray-600 text-justify mb-4">
-                  Soy un apasionado Ingeniero de software con un enfoque sólido en el desarrollo frontend y
-                  experiencia en el backend. Con un profundo conocimiento de tecnologías como Vue js y PHP
-                  (Laravel), me destaco en la creación de interfaces de usuario intuitivas y experiencias web
-                  dinámicas. Además, mi versatilidad se extiende al backend, donde puedo emplear mis
-                  habilidades en PHP para construir sistemas robustos y escalables. Además de mis fortalezas
-                  principales, también poseo habilidades en React y Express (Sequelize) lo que me permite
-                  adaptarme rápidamente a nuevas tecnologías y entornos de desarrollo
+                    Soy un dedicado Ingeniero de Software con experiencia en el desarrollo web fullstack. Mi desarrollo laboral se enfoca en tecnologías JavaScript con marcos de trabajo como Vue.js y React en el frontend, así como lenguajes como PHP (Laravel) o Sequelize (Express) en el backend. Cuento con un sólido conocimiento en bases de datos relacionales como PostgreSQL, MySQL o incluso MongoDB. Soy un desarrollador perfeccionista con la estructura del código y la calidad del producto final, siempre buscando la mejor solución y enfocado en la escalabilidad y mantenimiento futuro del software.
+
                     <br />
                     <br />
-                  Tengo una sólida experiencia trabajando en entornos colaborativos de equipo, donde he
-                  aplicado metodologías ágiles como Scrum, el uso de Git para el control de versiones, además
-                  de portar un firme compromiso con la escritura de código limpio y mantenible, siguiendo
-                  patrones de arquitectura para garantizar proyectos escalables y fáciles de mantener a largo
-                  plazo.
+                    Soy una persona disciplinada, comprometida y capaz de trabajar en entornos colaborativos usando metodologías agiles y herramientas de control de código, aportando mis conocimientos y entendiendo los requerimientos, riegos y oportunidades para proporcionar soluciones al usuario final.
                   </p>
                 </div>
               </div>
@@ -663,7 +654,7 @@ function App() {
               </a>
             </div>
 
-            <div className="container max-w-5xl py-12 px-3 mx-auto">
+            <div className="container max-w-16xl py-12 px-3 mx-auto">
               {activeTab === "experiencia" && (
                 <div className="grid gap-4 mx-4 sm:grid-cols-12">
                   <div className="col-span-12 sm:col-span-6">
@@ -671,32 +662,29 @@ function App() {
                       <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-gray-600 p-6 border-2 border-gray-300">
                         
                         <h3 className="text-xl font-semibold tracking-wide">
-                          Azit Developers (Fullstack)
+                          INFOTEC asignado a la Secretaria de Relaciones Exteriores
                         </h3>
                         <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
-                          Noviembre 2022 - Agosto 2024
+                          Septiembre 2024 - Actualidad
                         </time>
                         <a
-                              href="https://drive.google.com/file/d/1O5tMW6lwa7sVgZqk4x3WqaudeioeimFE/view"
+                              href="https://www.infotec.mx/"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
                             >
-                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Carta de Recomendación
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Pagina Oficial
                         </a>
                         <p className="mt-3 text-justify">
-                          Colaboré en diversos proyectos como desarrollador web
-                          fullstack, especializándome en tecnologías como PHP
-                          con Laravel y Vue.js con librerias de componentes como
-                          Quasar.
+                        Con experiencia en el mantenimiento y actualización de sistemas, he realizado migraciones garantizando la integridad de los datos y la continuidad operativa. También he diseñado e implementado módulos de alto impacto, optimizando procesos críticos y mejorando la eficiencia operativa.
                         </p>
                         <p className="mt-2 text-justify">
-                          Además de integrar la metodología SCRUM y usar
-                          arquitecturas y patrones de diseño escalables.
+                        He desarrollado soluciones tecnológicas personalizadas alineadas con los objetivos del negocio y las necesidades de los usuarios. Mi enfoque incluye la gestión de riesgos y una colaboración estrecha con los usuarios para ofrecer soluciones efectivas y de alto valor.
                         </p>
                       </div>
                     </div>
                   </div>
+
                   <div className="col-span-12 sm:col-span-6">
                     <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
                       <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-gray-600 p-6 border-2 border-gray-300">
@@ -715,18 +703,43 @@ function App() {
                               <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Carta de Recomendación
                         </a>
                         <p className="mt-3 text-justify">
-                          Participé en la creación de la pagina de la carrera de
-                          mi Universidad que se encuentra actualmente en uso con
-                          Php como lenguaje principal.
+                        Diseñé y desarrollé una página web para la carrera de Ingeniería en Sistemas Computacionales del Instituto Tecnológico de Veracruz, presentando de forma visualmente atractiva la matrícula de la carrera, información de docentes y videos introductorios de las materias.
                         </p>
                         <p className="mt-2 text-justify">
-                          Además desarrolle un sistema para gestionar los datos
-                          de esta pagina con Vue js con Quasar y Express con
-                          Sequalize.
+                        Además, creé un sistema gestor de datos conectado directamente a dicha página, permitiendo administrar información de docentes, materias, videos y secciones tanto de la carrera mencionada como de todas las carreras de la universidad.
                         </p>
                       </div>
                     </div>
                   </div>
+
+                  <div className="col-span-12 sm:col-span-6">
+                    <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
+                      <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-gray-600 p-6 border-2 border-gray-300">
+                        
+                        <h3 className="text-xl font-semibold tracking-wide">
+                          Azit Developers (Fullstack)
+                        </h3>
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
+                          Noviembre 2022 - Septiembre 2024
+                        </time>
+                        <a
+                              href="https://drive.google.com/file/d/1O5tMW6lwa7sVgZqk4x3WqaudeioeimFE/view"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
+                            >
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Carta de Recomendación
+                        </a>
+                        <p className="mt-3 text-justify">
+                        Diseñé y desarrollé interfaces de usuario intuitivas y atractivas, enfocándome en la experiencia del usuario para optimizar la usabilidad y accesibilidad. Además, creé un sistema de gestión de ganado para una empresa de crianza y venta, incorporando módulos de registro, cuidado, alimentación y venta, con estadísticas y gráficas en tiempo real.
+                        </p>
+                        <p className="mt-2 text-justify">
+                        Desarrollé un sistema gestor de tareas con funcionalidad de "drag and drop" para una empresa de cartografía, integrando soporte multilenguaje para su uso en México, EUA y El Salvador. También implementé módulos de un sistema de compras para la adquisición de activos fijos y la gestión de bienes inventariables en almacenes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               )}
               {activeTab === "estudios" && (
@@ -837,7 +850,7 @@ function App() {
                               href="https://drive.google.com/file/d/1uRCIzKqpFg_cG8IEOD-0NkmXC9urfFTT/view?usp=sharing"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center text-cyan-800 rounded-md mt-3 mb-6 hover:text-teal-600"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
                             >
                               <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Reconocimientos y flyers
                         </a>
