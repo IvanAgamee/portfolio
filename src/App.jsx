@@ -671,6 +671,14 @@ function App() {
                       <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-gray-600 p-6 border-2 border-gray-300">
                         <h3 className="text-xl font-semibold tracking-wide">
                           Azit Developers (Fullstack)
+                          <a
+                        href="http://carreras3.veracruz.tecnm.mx:21213/sistemas/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center bg-cyan-600 text-white px-4 mb-4 rounded-md shadow-md hover:bg-teal-600"
+                      >
+                        <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Visitar
+                      </a>
                         </h3>
                         <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
                           Noviembre 2022 - Agosto 2024
