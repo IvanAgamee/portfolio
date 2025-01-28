@@ -707,7 +707,7 @@ function App() {
                           Enero 2021 - Agosto 2022
                         </time>
                         <a
-                              href="https://drive.google.com/file/d/1IEnRrenS50C0FY-KRlsutb7LTfJudtg_/view"
+                              href="https://drive.google.com/file/d/16pqw6uxtNWT6-IZUAFddT4fS8Ztm5vvn/view?usp=sharing"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
@@ -800,9 +800,17 @@ function App() {
                         <h3 className="text-xl font-semibold tracking-wide">
                           Comunidad de Ingeniería en Sistemas{" "}
                         </h3>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
                           Octubre 2019 - Julio 2022
                         </time>
+                        <a
+                              href="https://drive.google.com/file/d/1_Za8biGqbL8EiZ41zSaLhF1kLhdFpe8X/view?usp=sharing"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
+                            >
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Reconocimientos de eventos
+                        </a>
                         <p className="mt-3 text-justify">
                           Participe en diversos eventos de divulgación científica como
                           organizador.
@@ -822,9 +830,17 @@ function App() {
                         <h3 className="text-xl font-semibold tracking-wide">
                           Asesor/Tallerista (Voluntariado)
                         </h3>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
                           Octubre 2019 - Julio 2022
                         </time>
+                        <a
+                              href="https://drive.google.com/file/d/1uRCIzKqpFg_cG8IEOD-0NkmXC9urfFTT/view?usp=sharing"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 mb-6 hover:text-teal-600"
+                            >
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Reconocimientos y flyers
+                        </a>
                         <p className="mt-3 text-justify">
                           Impartí algunos talleres y cursos de manera gratuita a
                           alumnos de la Universidad.
@@ -927,6 +943,14 @@ function App() {
                   <div className="p-4">
                     <div className="flex justify-between">
                         <h2 className="text-xl font-bold mb-4">Pagina de ISC</h2>
+                        <a
+                        href="http://carreras3.veracruz.tecnm.mx:21213/sistemas/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center bg-cyan-600 text-white px-4 mb-4 rounded-md shadow-md hover:bg-teal-600"
+                      >
+                        <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Visitar
+                      </a>
                     </div>
                     <div className="grid grid-cols-3 gap-2">
                       <div
