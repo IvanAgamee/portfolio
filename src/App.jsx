@@ -729,7 +729,6 @@ function App() {
                   </div>
                 </div>
               )}
-
               {activeTab === "estudios" && (
                 <div className="grid gap-4 mx-4 sm:grid-cols-12">
                   <div className="col-span-12 sm:col-span-6">
@@ -738,9 +737,17 @@ function App() {
                         <h3 className="text-xl font-semibold tracking-wide">
                           TECNM Campus Veracruz
                         </h3>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
                           Agosto 2018 - Julio 2022
                         </time>
+                        <a
+                              href="https://drive.google.com/file/d/155CgL0-68xRaIEdvJQqKEt2uhiHt-QuY/view"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
+                            >
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Titulo profesional
+                        </a>
                         <p className="mt-3 text-justify">
                           Egresado de la carrera de Ingeniería en Sistemas, desarrollando habilidiades de
                           programación y bases de datos
