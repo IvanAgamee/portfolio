@@ -766,10 +766,16 @@ function App() {
                         <h3 className="text-xl font-semibold tracking-wide">
                           CETIS No 15
                         </h3>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
                           {" "}
                           Agosto 2016 - Julio 2018
                         </time>
+                        <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 mb-5 hover:text-teal-600"
+                            >
+                        </a>
                         <p className="mt-3 text-justify">
                           Egresado como técnico en programación usando
                           tecnologías como Java para aprender las bases de 
