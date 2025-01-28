@@ -669,20 +669,21 @@ function App() {
                   <div className="col-span-12 sm:col-span-6">
                     <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
                       <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-gray-600 p-6 border-2 border-gray-300">
+                        
                         <h3 className="text-xl font-semibold tracking-wide">
                           Azit Developers (Fullstack)
                         </h3>
-                          <a
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
+                          Noviembre 2022 - Agosto 2024
+                        </time>
+                        <a
                               href="https://drive.google.com/file/d/1O5tMW6lwa7sVgZqk4x3WqaudeioeimFE/view"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center bg-cyan-600 text-white px-4 mb-4 rounded-md shadow-md hover:bg-teal-600"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
                             >
                               <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Carta de Recomendación
-                            </a>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
-                          Noviembre 2022 - Agosto 2024
-                        </time>
+                        </a>
                         <p className="mt-3 text-justify">
                           Colaboré en diversos proyectos como desarrollador web
                           fullstack, especializándome en tecnologías como PHP
@@ -702,9 +703,17 @@ function App() {
                         <h3 className="text-xl font-semibold tracking-wide">
                           Practicante Desarrollador web
                         </h3>
-                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-2">
+                        <time className="text-xs tracking-wide uppercase dark:text-gray-600 mt-1">
                           Enero 2021 - Agosto 2022
                         </time>
+                        <a
+                              href="https://drive.google.com/file/d/1IEnRrenS50C0FY-KRlsutb7LTfJudtg_/view"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-cyan-800 rounded-md mt-3 hover:text-teal-600"
+                            >
+                              <FaExternalLinkAlt className="w-4 h-4 mr-2" /> Carta de Recomendación
+                        </a>
                         <p className="mt-3 text-justify">
                           Participé en la creación de la pagina de la carrera de
                           mi Universidad que se encuentra actualmente en uso con
