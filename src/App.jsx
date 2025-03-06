@@ -21,7 +21,7 @@ import {
 import { FaFigma, FaGithub } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiPhp, SiSequelize, SiAdobexd, SiPostman } from "react-icons/si";
+import { SiPhp, SiSequelize, SiPostman } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import IconFront from "./assets/iconoFront.svg";
@@ -172,7 +172,6 @@ function App() {
     { name: "Mongo", icon: <DiMongodb />, category: "backend" },
     { name: "PostgreSQL", icon: <BiLogoPostgresql />, category: "backend" },
     { name: "Figma", icon: <FaFigma />, category: "" },
-    { name: "AdobeXD", icon: <SiAdobexd />, category: "" },
     { name: "Git", icon: <FaGitAlt />, category: "" },
     { name: "Jira", icon: <FaJira />, category: "" },
     { name: "Postman", icon: <SiPostman />, category: "backend" },
