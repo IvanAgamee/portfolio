@@ -3,9 +3,6 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { useSendEmail } from './hooks/useSendEmail';
-import IvanBanner from "./assets/IvanBanner.svg";
-import CollageIvan from "./assets/collageIvan.png";
-import CircleTransparent from "./assets/circleTransparent.svg";
 import ImageGallery from "react-image-gallery";
 import {
   FaReact,
@@ -31,53 +28,18 @@ import IconFront from "./assets/iconoFront.svg";
 import IconoBack from "./assets/IconoBack.svg";
 import IconoDesign from "./assets/IconoDesign.svg";
 
-import Carrusel_1 from "./assets/carrusel_1.jpeg";
-import Carrusel_2 from "./assets/carrusel_2.jpg";
-import Carrusel_3 from "./assets/carrusel_3.jpg";
-import Carrusel_4 from "./assets/carrusel_4.jpeg";
-import Carrusel_5 from "./assets/carrusel_5.jpg";
-import Carrusel_6 from "./assets/carrusel_6.jpg";
-import Carrusel_7 from "./assets/carrusel_7.jpeg"
-import Carrusel_13 from "./assets/carrusel_13.jpg";
-import Carrusel_12 from "./assets/carrusel_12.jpeg";
-// import Carrusel_15 from "./assets/carrusel_12.jpeg";
-
-import Dashboard1 from "./assets/interfaceDashboard1.jpg";
-import Dashboard2 from "./assets/interfaceDashboard2.jpg";
-import Dashboard3 from "./assets/interfaceDashboard3.jpg";
-
-import Compras1 from "./assets/compras1.jpg";
-import Compras2 from "./assets/compras2.jpg";
-import Compras3 from "./assets/compras3.jpg";
-
-import itverLanding1 from "./assets/itverLanding1.jpg";
-import itverLanding2 from "./assets/itverLanding2.jpg";
-import itverLanding3 from "./assets/itverLanding3.jpg";
-
-import cartoData1 from "./assets/cartoData1.jpg";
-import cartoData2 from "./assets/cartoData2.jpg";
-import cartoData3 from "./assets/cartoData3.jpg";
-
-import carnesRojas1 from "./assets/carnesRojas1.jpg";
-import carnesRojas2 from "./assets/carnesRojas2.jpg";
-import carnesRojas3 from "./assets/carnesRojas3.jpg";
-
-import comex1 from "./assets/comex1.jpg";
-import comex2 from "./assets/comex2.jpg";
-import comex3 from "./assets/comex3.jpg";
-
 function App() {
-  const [mainImage, setMainImage] = useState(Dashboard1);
+  const [mainImage, setMainImage] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/vvzvgrr5txpk4vogcspg.jpg');
 
-  const [imgItverLanding, setimgItverLanding] = useState(itverLanding2);
+  const [imgItverLanding, setimgItverLanding] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/bm23qrdu3ac0kfvrrrfx.jpg');
 
-  const [imgCartoData, setimgCartoData] = useState(cartoData3);
+  const [imgCartoData, setimgCartoData] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/ihnrlkh0snkbx6lsdzcc.jpg');
 
-  const [imgCompras, setimgCompras] = useState(Compras3);
+  const [imgCompras, setimgCompras] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/bedhzcqtqccvqufe5ulq.jpg');
 
-  const [imgComex, setimgComex] = useState(comex1);
+  const [imgComex, setimgComex] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/dxhghw63v0bcyzrdfn1e.jpg');
 
-  const [imgCarnesRojas, setimgCarnesRojas] = useState(carnesRojas2);
+  const [imgCarnesRojas, setimgCarnesRojas] = useState('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/b4pvu2p9bo2uxqlx2kpe.jpg');
 
   const [activeTab, setActiveTab] = useState("experiencia");
 
@@ -86,81 +48,69 @@ function App() {
     setActiveTab(tab);
   };
 
-  const images = [
-    Carrusel_1,
-    Carrusel_2,
-    Carrusel_3,
-    Carrusel_4,
-    Carrusel_5,
-    Carrusel_6,
-    Carrusel_7,
-    Carrusel_13,
-    Carrusel_12
-  ];
-
   const imagesTest = [
     {
-      original: Carrusel_12,
-      thumbnail: Carrusel_12,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/f7pq496zpva7e8dmjc4z.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/f7pq496zpva7e8dmjc4z.jpg',
       description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
     {
-      original: Carrusel_2,
-      thumbnail: Carrusel_2,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/wykbpkmsffwesww50udb.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/wykbpkmsffwesww50udb.jpg',
       description: 'Presentación de la pagina oficial de la carrera a nivel Estatal'
     },
     {
-      original: Carrusel_3,
-      thumbnail: Carrusel_3,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/kdh30zaf3yvjeczt9b2g.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/kdh30zaf3yvjeczt9b2g.jpg',
       description: 'Presentación de la pagina oficial de la carrera a nivel Estatal'
     },
     {
-      original: Carrusel_4,
-      thumbnail: Carrusel_4,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/qmkbc0ci5xbp8y6a0zyb.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/qmkbc0ci5xbp8y6a0zyb.jpg',
       description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
     {
-      original: Carrusel_5,
-      thumbnail: Carrusel_5,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/oztjmxgm7fwgwjwr9acr.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/oztjmxgm7fwgwjwr9acr.jpg',
       description: 'Presentación de la pagina oficial de la carrera a nivel Local'
     },
     {
-      original: Carrusel_6,
-      thumbnail: Carrusel_6,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/jwqlnec85kprkkpqu1gt.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/jwqlnec85kprkkpqu1gt.jpg',
       description: 'Presentación de la pagina oficial de la carrera a nivel Local'
     },
     {
-      original: Carrusel_7,
-      thumbnail: Carrusel_7,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/uznb2icbbrpjguymebgw.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/uznb2icbbrpjguymebgw.jpg',
       description: 'Presentación de proyectos a director nacional del TECNM'
     },
     {
-      original: Carrusel_13,
-      thumbnail: Carrusel_13,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/iaod8bvko0ngcuvylnmp.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209688/portafolio/iaod8bvko0ngcuvylnmp.jpg',
       description: 'Feria de carreras 2022'
     },
     {
-      original: Carrusel_1,
-      thumbnail: Carrusel_1,
+      original: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/xgtdo3fmbm3afakgzkca.jpg',
+      thumbnail: 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/xgtdo3fmbm3afakgzkca.jpg',
       description: 'Instructor en el curso de Java Script en el Tecnm Veracruz con mas de 50 alumnos'
     },
   ];
   
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const itemsPerPage = 3;
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - itemsPerPage : prevIndex - itemsPerPage
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? images.length - itemsPerPage : prevIndex - itemsPerPage
+  //   );
+  // };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + itemsPerPage >= images.length ? 0 : prevIndex + itemsPerPage
-    );
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex + itemsPerPage >= images.length ? 0 : prevIndex + itemsPerPage
+  //   );
+  // };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -172,7 +122,7 @@ function App() {
     setIsMenuOpen(false);
   };
 
-  const { sendEmail, error, success } = useSendEmail();
+  const { sendEmail } = useSendEmail();
 
   // re_81wDpqZu_Nee4g7covkCvn5FdTmYwe1bG
 
@@ -391,7 +341,7 @@ function App() {
             <div className="relative flex flex-col items-center justify-center lg:flex-row lg:justify-between bg-white md:pl-24 ">
               <div className="absolute block xs:hidden top-0 left-0 w-full h-full z-0">
                 <img
-                  src={CircleTransparent}
+                  src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/xpc4nldmkqicgvxllvmz.svg'
                   className="w-[700px] h-[700px] object-cover hidden md:block"
                   alt="Circle Transparent"
                   loading="lazy"
@@ -400,7 +350,7 @@ function App() {
 
               <div className="lg:order-2 lg:px-0 lg:pt-8 h-auto md:h-screen relative z-10">
                 <img
-                  src={IvanBanner}
+                  src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209698/portafolio/s09peggcqnbphlyu8bvz.svg'
                   alt="Iván Agame"
                   className="w-auto h-full lg:w-auto lg:h-full relative z-10"
                   onLoad={handleImageLoad}
@@ -589,7 +539,7 @@ function App() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 <div className="order-2 flex justify-center md:order-1">
                   <img
-                    src={CollageIvan}
+                    src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/p0q8s1i8hgtoz5w9csii.png'
                     alt="Iván Agame"
                     className="w-auto md:h-[500px] px-6 relative z-10" 
                   />
@@ -898,46 +848,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          mainImage === Dashboard1
+                          mainImage === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/vvzvgrr5txpk4vogcspg.jpg'
                             ? "border-4 border-amber-300 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Dashboard1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/vvzvgrr5txpk4vogcspg.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setMainImage(Dashboard1)}
+                          onClick={() => setMainImage('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/vvzvgrr5txpk4vogcspg.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          mainImage === Dashboard2
+                          mainImage === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/b5rt70bmahnnsmw6v3ff.jpg'
                             ? "border-4 border-amber-300 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Dashboard2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/b5rt70bmahnnsmw6v3ff.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setMainImage(Dashboard2)}
+                          onClick={() => setMainImage('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/b5rt70bmahnnsmw6v3ff.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          mainImage === Dashboard3
+                          mainImage === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/zwwytleivs26vglmaqap.jpg'
                             ? "border-4 border-amber-300 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Dashboard3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/zwwytleivs26vglmaqap.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setMainImage(Dashboard3)}
+                          onClick={() => setMainImage('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209685/portafolio/zwwytleivs26vglmaqap.jpg')}
                           loading="lazy"
                         />
                       </div>
@@ -968,46 +918,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgItverLanding === itverLanding1
+                          imgItverLanding === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/xwlvydohrbkeogiicbkc.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={itverLanding1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/xwlvydohrbkeogiicbkc.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgItverLanding(itverLanding1)}
+                          onClick={() => setimgItverLanding('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/xwlvydohrbkeogiicbkc.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgItverLanding === itverLanding2
+                          imgItverLanding === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/bm23qrdu3ac0kfvrrrfx.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={itverLanding2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/bm23qrdu3ac0kfvrrrfx.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgItverLanding(itverLanding2)}
+                          onClick={() => setimgItverLanding('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/bm23qrdu3ac0kfvrrrfx.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgItverLanding === itverLanding3
+                          imgItverLanding === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/ypql2wn02izrlnmtywe8.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={itverLanding3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/ypql2wn02izrlnmtywe8.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgItverLanding(itverLanding3)}
+                          onClick={() => setimgItverLanding('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/ypql2wn02izrlnmtywe8.jpg')}
                           loading="lazy"
                         />
                       </div>
@@ -1028,46 +978,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData1
+                          imgCartoData === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/kp2zgwlumw9s2gni9hjo.jpg'
                             ? "border-4 border-purple-400 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/kp2zgwlumw9s2gni9hjo.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData1)}
+                          onClick={() => setimgCartoData('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/kp2zgwlumw9s2gni9hjo.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData2
+                          imgCartoData === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/mnjkuiakiolrjwxofdwx.jpg'
                             ? "border-4 border-purple-400 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/mnjkuiakiolrjwxofdwx.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData2)}
+                          onClick={() => setimgCartoData('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/mnjkuiakiolrjwxofdwx.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCartoData === cartoData3
+                          imgCartoData === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/ihnrlkh0snkbx6lsdzcc.jpg'
                             ? "border-4 border-purple-400 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={cartoData3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/ihnrlkh0snkbx6lsdzcc.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCartoData(cartoData3)}
+                          onClick={() => setimgCartoData('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/ihnrlkh0snkbx6lsdzcc.jpg')}
                           loading="lazy"
                         />
                       </div>
@@ -1088,46 +1038,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgComex === comex1
+                          imgComex === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/dxhghw63v0bcyzrdfn1e.jpg'
                             ? "border-4 border-blue-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={comex1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/dxhghw63v0bcyzrdfn1e.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgComex(comex1)}
+                          onClick={() => setimgComex('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/dxhghw63v0bcyzrdfn1e.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgComex === comex2
+                          imgComex === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/hoi0jsaalr0m8pkgkiyx.jpg'
                             ? "border-4 border-blue-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={comex2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/hoi0jsaalr0m8pkgkiyx.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgComex(comex2)}
+                          onClick={() => setimgComex('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209683/portafolio/hoi0jsaalr0m8pkgkiyx.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgComex === comex3
+                          imgComex === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/lg2mcsxfsbga4c1k5yir.jpg'
                             ? "border-4 border-blue-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={comex3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/lg2mcsxfsbga4c1k5yir.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgComex(comex3)}
+                          onClick={() => setimgComex('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/lg2mcsxfsbga4c1k5yir.jpg')}
                           loading="lazy"
                         />
                       </div>
@@ -1150,46 +1100,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgCarnesRojas === carnesRojas1
+                          imgCarnesRojas === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/mvpqeuzaemgexjm2llls.jpg'
                             ? "border-4 border-rose-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={carnesRojas1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/mvpqeuzaemgexjm2llls.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCarnesRojas(carnesRojas1)}
+                          onClick={() => setimgCarnesRojas('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209686/portafolio/mvpqeuzaemgexjm2llls.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCarnesRojas === carnesRojas2
+                          imgCarnesRojas === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/b4pvu2p9bo2uxqlx2kpe.jpg'
                             ? "border-4 border-rose-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={carnesRojas2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/b4pvu2p9bo2uxqlx2kpe.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCarnesRojas(carnesRojas2)}
+                          onClick={() => setimgCarnesRojas('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/b4pvu2p9bo2uxqlx2kpe.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCarnesRojas === carnesRojas3
+                          imgCarnesRojas === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/uqxs0mij2iufx4kvtqxv.jpg'
                             ? "border-4 border-rose-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={carnesRojas3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/uqxs0mij2iufx4kvtqxv.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCarnesRojas(carnesRojas3)}
+                          onClick={() => setimgCarnesRojas('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209687/portafolio/uqxs0mij2iufx4kvtqxv.jpg')}
                           loading="lazy"
                         />
                       </div>
@@ -1212,46 +1162,46 @@ function App() {
                     <div className="grid grid-cols-3 gap-2">
                       <div
                         className={`cursor-pointer ${
-                          imgCompras === Compras1
+                          imgCompras === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/zednffxwky9han4b4gwj.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Compras1}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/zednffxwky9han4b4gwj.jpg'
                           alt="Small 1"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCompras(Compras1)}
+                          onClick={() => setimgCompras('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/zednffxwky9han4b4gwj.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCompras === Compras2
+                          imgCompras === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/ptz9s4ujhajgvxaigrsc.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Compras2}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/ptz9s4ujhajgvxaigrsc.jpg'
                           alt="Small 2"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCompras(Compras2)}
+                          onClick={() => setimgCompras('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/ptz9s4ujhajgvxaigrsc.jpg')}
                           loading="lazy"
                         />
                       </div>
                       <div
                         className={`cursor-pointer ${
-                          imgCompras === Compras3
+                          imgCompras === 'https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/bedhzcqtqccvqufe5ulq.jpg'
                             ? "border-4 border-teal-500 shadow-xl"
                             : ""
                         }`}
                       >
                         <img
-                          src={Compras3}
+                          src='https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/bedhzcqtqccvqufe5ulq.jpg'
                           alt="Small 3"
                           className="w-full h-full object-cover"
-                          onClick={() => setimgCompras(Compras3)}
+                          onClick={() => setimgCompras('https://res.cloudinary.com/dn2yoc3xm/image/upload/v1741209684/portafolio/bedhzcqtqccvqufe5ulq.jpg')}
                           loading="lazy"
                         />
                       </div>
